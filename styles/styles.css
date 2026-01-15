@@ -1,27 +1,23 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-
-h1 {
-    color: darkblue;
+aside {
+    width: 100%;
+    margin: 2rem 0rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: antiquewhite;
+    color: black;
 }
 
 img {
-    /* width: 150px; */
-    /* height: auto; */
-    border-radius: 50%;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    width: 200px;
+    height: auto;
 }
 
 p {
-    padding: 30px;
+    padding: 0;
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+    border-top: 1px solid black;
 }
