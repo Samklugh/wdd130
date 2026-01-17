@@ -5,12 +5,12 @@
 }
 
 main{
-    max-width: 20rem;
+    max-width: 100%;
 }
 
 aside{
     width: auto;
-    margin: 2rem;
+    margin: 0.5rem;
     border: 1px solid black;
     padding: 1rem;
     color: black;
@@ -27,7 +27,7 @@ main img{
     height: auto;
     border: 1px solid black;
     padding: 1rem;
-    box-shadow: 0 0 2rem blue;
+    box-shadow: 0 0 1rem rgb(131, 131, 180);
 }
 
 p{
@@ -47,7 +47,7 @@ nav{
 
 nav a{
     display: block;
-    color: brown;
+    color: white;
     padding: 1rem;
 }
 
