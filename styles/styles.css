@@ -41,3 +41,9 @@ nav{
     background-color: blueviolet;
     padding: 1rem;
 }
+
+nav a{
+    display: block;
+    color: brown;
+    padding: 1rem;
+}
