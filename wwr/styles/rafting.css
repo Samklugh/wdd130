@@ -81,3 +81,12 @@ article{
     float: right;
     width: 125px;
 }
+
+section h2{
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    color: #fff;
+    opacity: 0.9;
+    text-align: center;
+}
