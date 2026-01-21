@@ -4,7 +4,7 @@
     --header-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --accent-color: black; 
-    --accent-color2: green;
+    --accent-color2: red;
 }
 
 *{
@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: var(--body-font);
+}
 header a{
     display: block;
     color: white;
@@ -24,6 +27,7 @@ header{
     background-color: var(--primary-color);
     color: var(--accent-color2);
     margin-bottom: 2rem;
+    font-family: var(--header-font);
 }
 
 header, main, footer{
@@ -107,4 +111,5 @@ footer img {
 
 footer p{
     margin-bottom: 0px;
+    color: var(--secondary-color)
 }
