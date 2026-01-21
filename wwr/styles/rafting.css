@@ -59,7 +59,7 @@ nav, p, section, article{
     height: auto;
 }
 
-h1{
+.hero h1{
     position: absolute;
     top: 20px;
     width: 100%;
@@ -70,7 +70,7 @@ h1{
     color: #fff;
 }
 
-article{
+.hero article{
     position: absolute;
     bottom: 3rem;
     background-color: var(--accent-color);
