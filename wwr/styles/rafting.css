@@ -111,5 +111,6 @@ footer img {
 
 footer p{
     margin-bottom: 0px;
-    color: var(--secondary-color)
+    color: var(--accent-color2);
+    /* background-color: var(--primary-color); */
 }
