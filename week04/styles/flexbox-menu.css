@@ -5,12 +5,13 @@ body {
 
 nav {
     background-color: #36454f;
+    margin: 1rem;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
     max-width: 900px;
     margin: 0 auto;
     justify-content: space-around;
