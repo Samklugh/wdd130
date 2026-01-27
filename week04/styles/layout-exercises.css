@@ -24,19 +24,31 @@ div {
 .flex {
     background-color: #aba;
     /* write declarations here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .grid {
     background-color: #abb;
     /* enter declarations here */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    place-items: center;
 
 }
 
 .container2 {
     /* write declarations here */
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 
 .two {
     background-color: #ace;
