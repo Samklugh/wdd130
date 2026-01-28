@@ -1,7 +1,8 @@
 header {
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: 120px 1fr 1fr;
+    grid-template-columns: 120px 1fr 1fr; 
+    /* this creates three columns: first is 120px wide, the other two share remaining space. */
     align-items: center;
     border-bottom: 1px solid #ccc;
     max-width: 1000px;
@@ -24,7 +25,9 @@ header {
 }
 
 .navigation li {
-    flex: 1 1 auto;
+    flex: 1 1 auto; 
+    
+    /* this makes all nav items equal width. the 1 1 means they can grow and shrink as needed. */
 }
 
 .navigation a {
