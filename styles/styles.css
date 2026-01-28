@@ -18,12 +18,13 @@ aside{
     padding: 1rem;
     color: black;
     background-color: rgba(80, 91, 116, 0.103);
+    position: relative;
 }
 
 aside img{
     /* width: 200px; */
     height: auto;
-    width: 20em;
+    width: 18rem;
     text-align: center;
     margin-top: 2.3rem;
 }
@@ -51,6 +52,10 @@ footer{
     margin-top: 1rem;
     border-top: 1px solid black;
     text-align: center;
+    /* my css  */
+    position: fixed;
+    bottom: 0;
+    margin-left: auto;
 }
 
 nav{
@@ -62,10 +67,16 @@ nav a{
     display: block;
     color: white;
     padding: 1rem;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1{
     color: black;
+    border-bottom: 1px solid black;
 }
 
 
@@ -89,4 +100,34 @@ aside h2 {
 ul{
     height: 20vh;
     margin-top: 1rem;
+}
+
+header, footer, .grid {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+main {
+  grid-column: 2/3; 
+  margin: 1rem;
+}
+    
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
