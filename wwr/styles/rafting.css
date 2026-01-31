@@ -133,6 +133,10 @@ section p{
     display: inline;
 }
 
+.history{
+    max-width: 100%;
+}
+
 .history img{
 width: 300px;
   height: auto;
@@ -148,9 +152,10 @@ width: 300px;
 
 
 .adventure {
-    border: 2px solid #000;
-    margin: 40px 60px;
-    padding: 30px;
+    /* border: 2px solid #000; */
+    max-width: 100%;
+    /* margin: 40px 60px; */
+    /* padding: 30px; */
     text-align: center;
 }
 
@@ -170,6 +175,30 @@ figcaption {
     background: #ddd;
     margin-bottom: 5px;
     display: inline-flex;
+}
+
+footer {
+    background: var(--primary-color);
+    padding: 20px 60px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--accent-color2);
+    max-width: 96%;
+    /* border: 1px solid var(--accent-color2); */
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer p{
+    margin-left: 20rem;
 }
 
 
