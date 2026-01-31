@@ -62,7 +62,7 @@ nav, p, section, article{
     margin: 16px;
     padding: 8px;
 }
-nav{
+header nav{
     display: flex;
     flex: 1 1 auto;
     justify-content: space-around;
@@ -189,7 +189,7 @@ footer {
     /* border: 1px solid var(--accent-color2); */
 }
 
-.socialmedia img {
+nav img {
     width: 30px;
     height: 30px;
     border: 2px solid #000;
