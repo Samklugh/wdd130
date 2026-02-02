@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poll Form</title>
+    <link rel="stylesheet" href="styles/poll-form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULK+u1AyojXoPKFsqbhAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Products</p>
+      <p>Contact Us</p>
+    </header>
+
+    <main>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <form>
+          <div class="form-item column2">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required />
+          </div>
+          <div class="form-item column2">
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail" required />
+          </div>
+        </form>
+      </fieldset>
+
+      <fieldset>
+        <legend>Questions</legend>
+        <div class="second">
+          <label for="quantity">Select Quantity</label>
+          <select name="quantity" id="quantity">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <div class="form-item column1">
+            <label for="browser">What is your favorite internet browser?</label>
+            <select id="browser" name="browser">
+              <option value="chrome">Chrome</option>
+              <option value="firefox">Firefox</option>
+              <option value="edge">Edge</option>
+              <option value="brave">Brave</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-item column1">
+            <label for="pet">Do you have a household pet?</label>
+            <input type="checkbox" id="pet" name="pet" />
+          </div>
+          <div class="form-item column1">
+            <label for="feedback">List the places you have lived:</label>
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="4"
+              placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"
+            ></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit Poll</button>
+    </main>
+
+    <footer>
+      <p>© Samson Inc</p>
+
+      <i class="facebook fa-brands fa-linkedin"></i>
+      <i class="twitter fa-brands fa-twitter"></i>
+      <i class="instagram fa-brands fa-instagram"></i>
+    </footer>
+  </body>
+</html>
