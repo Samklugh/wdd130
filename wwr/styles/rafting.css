@@ -188,8 +188,8 @@ footer {
     align-items: center;
     color: white;
     max-width: 100%;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
 }
 
 .socialmedia img {
@@ -233,7 +233,7 @@ footer {
     align-items: center;
 }
 
-.address div{
+.address h1{
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -330,4 +330,33 @@ footer {
 .button button{
     padding: 0.5rem 8rem;
     
+}
+
+.serve{
+    border: 1px solid black;
+}
+
+.serve p:first-child{
+    margin-left: 30%;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.staff-pix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff-1, .staff-2, .staff-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.serve img{
+    width: 15rem;
+    height: 10rem;
 }
