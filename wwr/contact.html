@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Thrive Rafting</title>
+
     <meta
       name="description"
-      content="The is the contact page of my website. The about page will provide details how to get in touch with me."
+      content="This is the contact page for Thrive Rafting Company. Get in touch with us for inquiries, reservations, and feedback."
     />
     <meta name="author" content="Samson Odunaiya" />
+
     <link rel="stylesheet" href="styles/rafting.css" />
   </head>
 
   <body>
     <header>
-      <img src="images/rafting-logo.png" alt="Logo" />
+      <img src="images/rafting-logo.png" alt="Thrive Rafting logo" />
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -27,119 +29,148 @@
       <div class="address">
         <h1>Thrive Rafting Company</h1>
         <address>
-          <p class="location">123 Sangotedo Street Lekki Lagos, Nigeria</p>
+          <p class="location">123 Sangotedo Street, Lekki, Lagos, Nigeria</p>
           <p class="phone">+234-843-2324</p>
           <p class="email">samson@gmail.com</p>
         </address>
       </div>
 
       <section class="contact-section">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31715.936114484277!2d3.6045881528981307!3d6.459174169861297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9e74b66fad9%3A0x53a10c18c88c4c97!2sGiwa%20Gardens!5e0!3m2!1sen!2suk!4v1770152013563!5m2!1sen!2suk"
-              width="
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31715.936114484277!2d3.6045881528981307!3d6.459174169861297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf9e74b66fad9%3A0x53a10c18c88c4c97!2sGiwa%20Gardens!5e0!3m2!1sen!2suk!4v1770152013563!5m2!1sen!2suk"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
 
-          <div class="right-contact">
+        <div class="right-contact">
+          <form action="#" method="post">
             <div class="contact-details">
-              <form action="">
-                <div>
-                  <label for="">Name</label>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="Enter your name"
-                  />
-                </div>
-                <div>
-                  <label for="">Email</label>
-                  <input
-                    type="email"
-                    name=""
-                    id=""
-                    placeholder="Enter your email"
-                  />
-                </div>
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
               </div>
 
-              <div class="radio">
-                <div class="container">
-                  <div class="left">
-                    <p>Message Purpose</p>
-                  </div>
-                  <div class="right">
-                    <div>
-                      <input type="radio" name="" id="" />
-                      <label for="">General Inquiry</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="" id="" />
-                      <label for="">Reservation Question</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="" id="" />
-                        <label for="">Website Suggestion</label>
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
               </div>
-              <div class="message">
-                <label for="">Message</label>
-                <textarea name="" id="" placeholder="Type here"></textarea>
-              </div>
-              <div class="subscribe">
-                <input type="checkbox" name="" id="" />
-                <label for=""
-                  >Please Subscribe me to the monthlynewsletter</label
-                >
-              </div>
-              <div class="button">
-                <button type="submit">Get in Touch!</button>
-              </div>
-              </form>
             </div>
-          </div>
+
+            <div class="radio">
+              <p>Message Purpose</p>
+
+              <div>
+                <input
+                  type="radio"
+                  id="general"
+                  name="purpose"
+                  value="general"
+                  required
+                />
+                <label for="general">General Inquiry</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="reservation"
+                  name="purpose"
+                  value="reservation"
+                />
+                <label for="reservation">Reservation Question</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="suggestion"
+                  name="purpose"
+                  value="suggestion"
+                />
+                <label for="suggestion">Website Suggestion</label>
+              </div>
+            </div>
+
+            <div class="message">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Type your message here"
+                rows="5"
+                required
+              >
+              </textarea>
+            </div>
+
+            <div class="subscribe">
+              <input type="checkbox" id="subscribe" name="subscribe" />
+              <label for="subscribe">
+                Please subscribe me to the monthly newsletter
+              </label>
+            </div>
+
+            <div class="button">
+              <button type="submit">Get in Touch!</button>
+            </div>
+          </form>
+        </div>
       </section>
 
       <section class="serve">
         <p>We Are Here to Serve You</p>
+
         <div class="staff-pix">
           <div class="staff-1">
-            <img src="images/staff1.jpeg" alt="Staff image" />
+            <img src="images/staff1.jpeg" alt="Staff member Stacy Morgan" />
             <p>Stacy Morgan</p>
           </div>
 
           <div class="staff-2">
-            <img src="images/staff2.jpeg" alt="Staff image" />
+            <img src="images/staff2.jpeg" alt="Staff member John Phillips" />
             <p>John Phillips</p>
           </div>
 
           <div class="staff-3">
-            <img src="images/staff3.jpeg" alt="Staff image" />
+            <img src="images/staff3.jpeg" alt="Staff member Lewis Crew" />
             <p>Lewis Crew</p>
           </div>
-          <div class="names"></div>
         </div>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2026 | Thrive Raft | Samson Odunaiya</p>
+
       <nav class="socialmedia">
-        <a href="https://facebook.com"
-          ><img src="./images/facebok.png" alt="Facebook Logo"
-        /></a>
-        <a href="https://linkedin.com"
-          ><img src="./images/linkedin.png" alt="LinkedIn Logo"
-        /></a>
-        <a href="https://youtube.com"
-          ><img src="./images/youtube.png" alt="YouTube Logo"
-        /></a>
+        <a href="https://facebook.com">
+          <img src="images/facebok.png" alt="Facebook logo" />
+        </a>
+        <a href="https://linkedin.com">
+          <img src="images/linkedin.png" alt="LinkedIn logo" />
+        </a>
+        <a href="https://youtube.com">
+          <img src="images/youtube.png" alt="YouTube logo" />
+        </a>
       </nav>
     </footer>
   </body>
