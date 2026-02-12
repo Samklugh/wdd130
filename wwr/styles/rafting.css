@@ -5,6 +5,12 @@
     --body-font: Arial, Helvetica, sans-serif;
     --accent-color: black;
     --accent-color2: rgb(35, 35, 192);
+
+    --primary-color: #2c3e50;  
+--secondary-color: #f4f7f6;
+--accent-color: #d4af37;   
+--text-main: #333333;
+--text-light: #ffffff;
 }
 
 * {
@@ -378,7 +384,7 @@ footer {
 }
 
 
-.hero_home img {
+.hero_home video {
     display: block;
     width: 100%;
     height: 100vh;
@@ -387,14 +393,17 @@ footer {
 
 .hero_home h1 {
     position: absolute;
-    top: 80px;
-    width: 98.78%;
-    padding: 16px;
+    top: 60px;
+    width: 60%;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-left: 20%;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: #fff;
     z-index: 1;
+    font-size: 3rem;
 }
 
 .best{
@@ -459,6 +468,10 @@ border-radius: 1rem;
     font-weight: 700;
     color: white;
 }
+.cards-btn a{
+    text-decoration: none;
+    color: white;
+}
 
 .cards-btn:hover{
     background-color: rgba(99, 5, 252, 0.9);
@@ -473,7 +486,7 @@ border-radius: 1rem;
     border-radius: 8px;
     border: 1px solid #ccc;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    margin-left: auto;
+    margin: auto;
     margin-top: 3rem;
     margin-bottom: 1rem;
 }
@@ -550,10 +563,10 @@ border-radius: 1rem;
 }
 
 .difference h2{
-    background-color: #3f1e92;
+    background-color: transparent;
 }
 .difference{
-    background-color: #3f1e92;
+    background-color: var(--primary-color);
     width: 100%;
     height: 80vh;
     margin-bottom: 4rem;
@@ -583,14 +596,18 @@ border-radius: 1rem;
     border-radius: 1rem;
     margin-top: 1rem;
     font-size: 1rem;
-    background-color: rgba(129, 179, 10, 0.691);
+    background-color: rgba(83, 92, 62, 0.691);
     font-weight: 700;
     color: white;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .difference-btn:hover{
     background-color: rgba(129, 179, 10, 0.9);
     cursor: pointer;
+    background-color: #c49a2d;
+transform: scale(1.05);
 }
 
 /* Centers the entire form on the page */
