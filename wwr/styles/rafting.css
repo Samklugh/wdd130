@@ -592,3 +592,98 @@ border-radius: 1rem;
     background-color: rgba(129, 179, 10, 0.9);
     cursor: pointer;
 }
+
+/* Centers the entire form on the page */
+.sn-signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Takes up most of the viewport height for vertical centering */
+  padding: 20px;
+}
+
+.sn-newsletter-container {
+  width: 100%;
+  max-width: 500px; /* Wider layout for larger inputs */
+}
+
+.sn-form-fieldset {
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 40px;
+  background-color: #f9f9fb;
+}
+
+.sn-form-legend {
+  padding: 0 15px;
+  font-weight: bold;
+  color: #888;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.sn-headline {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #222;
+  text-align: center;
+  background-color: transparent;
+}
+
+.sn-subtext {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  margin-left: 2rem;
+}
+
+/* Spacing out the input groups */
+.sn-input-block {
+  margin-bottom: 25px;
+}
+
+.sn-label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 1rem;
+  color: #333;
+}
+
+/* Larger, well-spaced input fields */
+.sn-field {
+  width: 100%;
+  padding: 18px; /* Extra padding for "large" feel */
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.sn-field:focus {
+  border-color: #8f9092;
+  box-shadow: 0 0 8px rgba(151, 161, 171, 0.2);
+  outline: none;
+}
+
+/* Large call-to-action button */
+.sn-submit-trigger {
+  width: 100%;
+  padding: 18px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.sn-submit-trigger:hover {
+  background-color: #444;
+}
