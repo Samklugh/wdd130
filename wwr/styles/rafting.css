@@ -27,11 +27,22 @@ header a {
     display: block;
     color: white;
     margin-left: 3rem;
-    padding-bottom: 1rem;
+    padding : 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
 
     align-items: center;
+    transform: scale(1.05);
     /* border-bottom: 1px solid #ccc; */
     /* max-width: 1000px; */
+}
+
+header a:hover {
+    background-color: var(--accent-color2);
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 1rem;
+    background-color: #4f5c6a57;
 }
 
 header {
@@ -81,6 +92,7 @@ header nav {
     justify-content: space-around;
     align-items: center;
     border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
 }
 
 nav a {
@@ -196,6 +208,19 @@ footer {
     max-width: 100%;
     /* position: fixed; */
     /* bottom: 0; */
+}
+
+
+footer i {
+    display: flex;
+    padding-right: 10px;
+    margin-right: 1rem;
+    font-size: 3rem;
+}
+
+footer i:first-child {
+    margin-right: 0px;
+    padding-right: 2px;
 }
 
 .socialmedia img {
@@ -703,4 +728,72 @@ transform: scale(1.05);
 
 .sn-submit-trigger:hover {
   background-color: #444;
+}
+
+
+.sn-adventure-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Make the Purpose section span both columns for a unique layout */
+.sn-purpose {
+  grid-column: 1 / span 2; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sn-grid-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.sn-grid-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.sn-content-box {
+  padding: 25px;
+}
+
+.sn-content-box h2, .sn-content-box h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-family: var(--header-font);
+}
+
+.sn-content-box h2:first-child {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.sn-content-box h3{
+    text-align: center;
+}
+
+
+
+/* Responsive adjustment: Stack on mobile */
+@media (max-width: 768px) {
+  .sn-adventure-grid, .sn-purpose {
+    grid-template-columns: 1fr;
+  }
+  .sn-purpose {
+    grid-column: 1 / span 1;
+  }
 }
