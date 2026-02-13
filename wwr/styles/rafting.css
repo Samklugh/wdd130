@@ -218,7 +218,7 @@ footer i {
     font-size: 3rem;
 }
 
-footer i:first-child {
+footer p i {
     margin-right: 0px;
     padding-right: 2px;
 }
