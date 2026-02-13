@@ -863,10 +863,6 @@ transform: scale(1.05);
     background-color: #f9f9f9;
 }
 
-p{
-    text-indent: 0rem;
-}
-
 /* Responsive adjustment: Stack on mobile */
 @media (max-width: 768px) {
   .sn-adventure-grid, .sn-purpose {
